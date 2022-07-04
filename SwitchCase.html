@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case</title>
+    <script>
+      /*
+            Now lets talk about the swithc cases in javascript
+
+            whats is a switch case?
+            The switch statement executes a block of code depending on different cases. 
+            The switch statement is a part of JavaScript's "Conditional" Statements, 
+            which are used to perform different actions based on different conditions. 
+            Use switch to select one of many blocks of code to be executed.
+
+            Syntax
+            Switch(expression){
+                case condition1 : statment()
+                break;          
+                case condition2 : statment()
+                break;
+                case condition3 : statment()
+                break;
+                defualt : statment()
+
+            }
+
+            Note :
+            in expression you right an expression and case condition you check the cases
+            and in any of the following case is true the statment that case will print and
+            the others case are not check.  
+
+*/
+
+      var day = 7;
+      switch (day) {
+        case 1:
+          document.write("Monday");
+          break;
+        case 2:
+          document.write("Tuesday");
+          break;
+        case 3:
+          document.write("Wednesday");
+          break;
+        case 4:
+          document.write("Thursday");
+          break;
+        case 5:
+          document.write("Friday");
+          break;
+        case 6:
+          document.write("Staurday");
+          break;
+        case 7:
+          document.write("Sunday");
+          break;
+        default:
+          document.write("Please enter a valid day");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
