@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional Ternary Op in JS</title>
+    <script>
+      /*
+
+Lets talk about Conditional ternary operator in javascript
+
+        ternary operator work same as if condition but the syntax is totally different
+        and you are not able to write multiple condiitons in that.
+
+        syntax
+        var a;
+        (condition)? a = '': a ='';
+        docuemnt,write(a); 
+
+*/
+      var a = 20;
+      var b;
+      b = a <= 20 ? "True" : "False";
+      document.write(b + "<br>");
+
+      // there is another way to write this
+      var A = 30;
+      var B;
+      A < 10 ? (B = "True") : (B = "false");
+      document.write(B);
+    </script>
+  </head>
+  <body></body>
+</html>
