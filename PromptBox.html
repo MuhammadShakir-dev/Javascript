@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Box</title>
+    <script>
+      /*
+            Prompt box in javascript
+
+            whats is prompt box in javascript?
+            prompt box is a pop-up window that displays a message to the user. also ot 
+            takes some input from the user.
+
+            TASK NO 2
+            Create a prompt box in javascript and ask user to enter his name.
+            if user click on ok then it will return the name else it will return null.
+            if user click on cancel then it will return null.
+            
+
+            Solution of task no 2:
+            var a = prompt("Enter your name");
+            alert("Hello" + " " + a);
+
+            TASK NO 3.
+            Create a quiz game in javascript using if else condition and prompt box.
+
+            if user enter the correct answer then it will display a message "Correct Answer"
+            else it will display a message "Wrong Answer"
+    
+        */
+
+      var a = prompt("What is your name?");
+      alert("Hello" + " " + a + " " + "Welcome to quiz game");
+      alert("The first word of every ans is capital");
+
+      var b = prompt("What is capital of Pakistan?");
+      if (b == "Islamabad") {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+
+      var c = prompt("What is the biggest city of Pakistan?");
+      if (c == "Karachi") {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+
+      var d = prompt("What is the biggest river of Pakistan?");
+      if (d == "Indus") {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+
+      var e = prompt("What is the biggest sea of Pakistan?");
+      if (e == "Arabian") {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+
+      var f = prompt("What is the biggest mountain of Pakistan?");
+      if (f == "k2") {
+        alert("Correct Answer");
+      } else {
+        alert("Wrong Answer");
+      }
+
+      if(b == "Islamabad"){
+        document.write("Got 10 Marks for Question 1 <br>");
+      }else{
+        document.write("Lost 10 Marks for Question 1 <br>");
+      }
+
+      if(c == "Karachi"){
+        document.write("Got 10 Marks for Question 2 <br>");
+    }else{
+        document.write("Lost 10 Marks for Question 2 <br>")
+    }
+
+    if(d == "Indus"){
+        document.write("Got 10 Marks for Question 3 <br>");
+    }else{
+        document.write("Lost 10 Marks for Question 3 <br>");
+    }
+
+    if(e == "Arabian"){
+        document.write("Got 10 Marks for Question 4 <br>");
+    }else{
+        document.write("Lost 10 Marks  for Question 4 <br>");
+    }
+
+    if(f == "k2"){
+        document.write("Got 10 Marks for Question 5 <br>");
+    }else{
+        document.write("Lost 10 Marks for Question 5 <br>");
+    }
+
+    if(b == "Islamabad" && c == "Karachi" && d == "Indus" && e == "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 50")
+    }else if(b == "Islamabad" && c == "Karachi" && d == "Indus" && e == "Arabian" && f != "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 40")
+    }else if(b == "Islamabad" && c == "Karachi" && d == "Indus" && e != "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 40")
+    }else if(b == "Islamabad" && c == "Karachi" && d != "Indus" && e == "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 40")
+    }else if(b == "Islamabad" && c != "Karachi" && d == "Indus" && e == "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 40")
+    }else if(b != "Islamabad" && c == "Karachi" && d == "Indus" && e == "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 40")
+    }else if( b != "Islamabad" && c!="Karachi" && d == "Indus" && e == "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 30")
+     
+    }else if(b == "Islamabad" && c == "Karachi" && d != "Indus" && e != "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 30")
+    }else if(b == "Islamabad" && c == "Karachi" && d == "Indus" && e != "Arabian" && f != "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 30")
+    }else if(b != "Islamabad" && c !="Karachi" && d !="Indus" && e =="Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 20")
+    }else if(b == "Islamabad" && c == "Karachi" && d != "Indus" && e != "Arabian" && f != "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 20")
+    }else if(b != "Islamabad" && c == "Karachi" && d != "Indus" && e != "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 20")
+    }else if(b != "Islamabad" && c != "Karachi" && d == "Indus" && e != "Arabian" && f == "k2"){
+        document.write("Congratulations! You have comleted the quiz")
+        document.write("<br>")
+        document.write("Your total is 20")
+    }else if(b != "Islamabad" && c != "Karachi" && d != "Indus" && e != "Arabian" && f == "k2"){
+        document.write("Your Score is very low")
+        document.write("<br>")
+        document.write("Your total is 10")
+    }else if(b !="Islamabad" && c != "Karachi" && d != "Indus" && e == "Arabian" && f != "k2"){
+        document.write("Your Score is very low")
+        document.write("<br>")
+        document.write("Your total is 10")
+    }else if(b != "Islamabad" && c != "Karachi" && d == "Indus" && e != "Arabian" && f != "k2"){
+        document.write("Your Score is very low")
+        document.write("<br>")
+        document.write("Your total is 10")
+    }else  if(b != "Islamabad" && c == "Karachi" && d != "Indus" && e != "Arabian" && f != "k2"){
+        document.write("Your Score is very low")
+        document.write("<br>")
+        document.write("Your total is 10")
+    } else if(b == "Islamabad" && c != "Karachi" && d != "Indus" && e != "Arabian" && f != "k2"){
+        document.write("Your Score is very low")
+        document.write("<br>")
+        document.write("Your total is 10")
+    }else if(b != "Islamabad" && c != "Karachi" && d != "Indus" && e != "Arabian" && f != "k2"){
+        document.write("You are fail in this quiz");
+        document.write("<br>");
+        document.write("Your total is 0");
+    }
+    </script>
+  </head>
+  <body></body>
+</html>

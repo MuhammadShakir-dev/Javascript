@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in js</title>
+    <script>
+      /*
+                    LETS DISCUSS EVENTS IN JAVASCRIPT.
+                    
+                    Q: What is an event in javascript?
+                    A: An event is a happening in the browser.
+
+                    How to trigger an event in javascript?
+                    1. Use the onclick attribute in the html tag.
+                    2. Use the addEventListener method.
+                    3. Use the click event.
+
+                    How to listen for an event in javascript?
+                    1. Use the addEventListener method.
+
+                    How to stop an event in javascript?
+                    1. Use the preventDefault method.
+
+                    How to stop an event from bubbling up in javascript?
+                    1. Use the stopPropagation method.
+
+                    How to stop an event from bubbling up and down in javascript?
+                    1. Use the stopImmediatePropagation method.
+
+                    how many types of event are in javascript?
+                    1. Mouse Events
+                    2. Keyboard Events
+                    3. Form Events
+                    4. Other Events
+
+                    List of event in javascript.
+                    1. click
+                    2. mouseover
+                    3. mouseout
+                    4. mouseenter
+                    5. mouseleave
+                    6. mousemove
+                    7. mousedown
+                    8. mouseup
+                    9. keydown
+                    10. keyup
+                    11. keypress
+                    12. focus
+                    13. blur
+                    14. change
+                    15. submit
+                    16. load
+                    17. unload
+                    18. resize
+                    19. scroll
+                    20. error
+                    21. abort
+                    22. select
+                    23. contextmenu
+                    24. dragstart
+                    25. drag
+                    26. dragenter
+                    27. dragleave
+                    28. dragover
+                    29. drop
+                    30. dragend
+                    31. copy
+                    32. cut
+                    33. paste
+                    34. change
+                    35. input
+                    36. focus
+                    37. blur
+                    NOTE.
+                    onkeypress only works in body tag and in form where you taking input from user.
+                    onkeydown only works in body tag.
+
+
+              */
+      function clickEvent() {
+        alert("You clicked on the button");
+      }
+      function dbclickEvent() {
+        alert("You double clicked on the button");
+      }
+      function rightclickEvent() {
+        alert("You right clicked on the button");
+      }
+      function mouseHoverEvent() {
+        alert("You mouse is over the button");
+      }
+      function mouseOutEvent() {
+        alert("You mouse is out of the button");
+      }
+    </script>
+    <style>
+        h1{
+            text-align: center;
+            font-weight: normal;
+            word-spacing: 20px;
+        }
+      .click {
+        margin-left: 45%;
+        margin-top: 100px;
+        width: 200px;
+        height: 50px;
+        background-color: #4caf50;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 2px grey;
+      }
+      .dbclick {
+        margin-left: 45%;
+        margin-top: 50px;
+        width: 200px;
+        height: 50px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 2px grey;
+      }
+      .rightclick {
+        margin-left: 45%;
+        margin-top: 50px;
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 15px 2px grey;
+      }
+      .mouseHover{
+        margin-left:45%;
+        margin-top:50px;
+        width:200px;
+        height:50px;
+        background-color:blue;
+        color:white;
+        font-size:20px;
+        border:none;
+        border-radius:10px;
+        box-shadow:1px 1px 15px 2px grey;
+      }
+        .mouseOut{
+            margin-left:45%;
+            margin-top:50px;
+            width:200px;
+            height:50px;
+            background-color:black;
+            color:white;
+            font-size:20px;
+            border:none;
+            border-radius:10px;
+            box-shadow:1px 1px 15px 2px grey;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>EVENTS IN JAVASCRIPT</h1>
+    <button onclick="clickEvent()" class="click">Click</button>
+    <button ondblclick="dbclickEvent()" class="dbclick">Db Click</button>
+    <button oncontextmenu="rightclickEvent()" class="rightclick">
+      Right Click
+    </button>
+    <button onmouseenter="mouseHoverEvent()" class="mouseHover">
+      Mouse hover
+    </button>
+    <button onmouseout="mouseOutEvent()" class="mouseOut">Mouse out</button>
+  </body>
+</html>
